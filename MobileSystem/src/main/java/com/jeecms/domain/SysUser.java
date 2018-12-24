@@ -1,5 +1,7 @@
 package com.jeecms.domain;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,9 +17,11 @@ public class SysUser  implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id ;
     /** 用户名 */
+	@Excel(name = "用户名", isImportField = "true", width = 14)
     private  String username ;
     /** 密码 */
-    private  String password ;
+	@Excel(name = "密码",isImportField = "true", width = 14, orderNum = "1")
+	private String password ;
     /** 加密码 */
     private  String key ;
 	/** 创建时间 */
@@ -31,7 +35,6 @@ public class SysUser  implements Serializable {
     
 	public SysUser (){}
 	
-    
     public Integer getId () {
         return this.id;
     }
