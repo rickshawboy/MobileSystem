@@ -2,6 +2,7 @@ package com.jeecms.service;
 
 import com.jeecms.domain.SysUser;
 
+
 public interface SysUserService {
 
 	void insertUser(SysUser user);

@@ -1,31 +1,26 @@
 package com.jeecms.controller;
 
-import java.io.IOException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.ExportParams;
-import org.apache.http.HttpRequest;
-import org.apache.http.HttpResponse;
-
-import org.apache.poi.ss.usermodel.Workbook;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.jeecms.annotation.Json;
 import com.jeecms.annotation.ValidUserName;
 import com.jeecms.domain.SysUser;
 import com.jeecms.quartz.QuartzManager;
 import com.jeecms.quartz.ScheduledTask;
 import com.jeecms.service.SysUserService;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 
@@ -44,7 +39,7 @@ public class SysUserController {
 	
 	@Autowired
 	private QuartzManager quartzManager;
-	
+
 	@RequestMapping(value="insert",method=RequestMethod.POST)
 	public void insert(SysUser user) {
 		user.setUpdateUser(null);

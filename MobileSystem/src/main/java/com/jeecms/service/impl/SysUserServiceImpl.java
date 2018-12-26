@@ -9,7 +9,7 @@ import com.jeecms.domain.SysUser;
 import com.jeecms.service.SysUserService;
 
 @Service(value="sysUserService")
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class SysUserServiceImpl implements SysUserService{
 
 	@Autowired

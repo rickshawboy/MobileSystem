@@ -3,6 +3,9 @@ package com.jeecms.dao;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.jeecms.domain.SysUser;
+import org.springframework.stereotype.Component;
+
+@Component
 @Mapper
 public interface SysUserMapper {
 
