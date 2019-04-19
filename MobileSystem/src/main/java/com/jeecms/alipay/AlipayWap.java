@@ -35,17 +35,15 @@ public class AlipayWap {
     // 支付宝网关（固定）
     public static String URL = "https://openapi.alipay.com/gateway.do";
     // APPID 即创建应用后生成
-    public static String APP_ID = "2016090701863111";
+    public static String APP_ID = "";
     // 开发者私钥，由开发者自己生成
-    public static String APP_PRIVATE_KEY =
-        "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCScR5EeE8wW+ok+lHG8B4SpiUOqpPdJZur2A73V14IWgLRHge2EwSiVeVK9jH3QTGaGnyqUQ8RbehbqFZv5sPnLJBK1+t1FCcjM75YuOLZ/SI+YfpyF1JTSY4KZL/HKU33cX+8aj1P4noFqxhKEc404Xrcmdnli+Wv3/jaWugdudDPXyRAyrnl3XUm48NRlAIMXaA+mF5iQJzugJp8V9gwiRaLnRvFEKze48OobfnGgaPr0g9it/wy5KO1f0IWNrqpZ13tVyEchoGCmAeEgLikv6fJvU+upg0v3EcZl345Ng0pMCKo7ahfCF3VPj5Q3Z+KWF0TU6h8+Uvn2FXVpcXHAgMBAAECggEASr5lvnjRolMnnRwOpUVldAtNGsFBmzxYyksKyH/VRNn8WhPDx9DJKrpAwBQMyLCDyq3+N0gMMs8wK6guBgt4rgN22lx+l1Fj8Hm2i75COxUSZ1jG5Xi10kDWuMNXhyWz37oUgmyPQrjLox0C1rtjzmXPuczlBF51K2FbuMdxdcnc0e33XiQQ571PW4A2DIGAjHZDffIXEq6502djmEOV1vMD5ueyxitCSqUiq/j6YSEBv3OwNXgg3kvd2XFtewl2J+Enj4krgmynPpLAqjxlexjVUFQqBFm6WT1rLiKEi6d3Q4B8X6SaxE7Bs8c+6D+WTunErbstS5eVMNqzkgSwgQKBgQDX3eX8uFJ33MYSZNoAPllGNZ7v+CrIdjVcA4oWpaAbxEyo1poImgfSGvlPb+ukxBPlUuwsBNX3ZDJJnpuMv9FNREJC+NmCklxwSDbruH/WsK4zsSAIQIyTkwNBd6sp06fWox5AwIz9TBrkisz7UgEHp7kx/xA51Gm6bYL5+hcspwKBgQCtqvdBEDoPV5TAmHBFyVlG/WcXGiJsW/Nm++HvfdMC47YjhHaMjJEfyF/YHggbiHTa9ODudHzm5TjdGjdtbKEVKJkWHOjNXXvOYCAAOPJMOtPPtibxQD5P8PFqz7jpAWfNWIj/fnryPelm9wPgcPuNz03wsF/wthXA9H6u1Aoh4QKBgHXx6BeNHoIfPpoOQI6hgmW6Jn03OykMbVs5E9oL5M9HEhuuJbtNbbh+xHmCzV3ZRIWoKSJkAgSJ2nAfGR5uMA3nncy56x5MmfU/f8KLrE3Be20C+l2H50c6rCy5FexkmO/NcFow2tgLHSaCMD2hMK7eFXIbyuHODXavH0E2RDNBAoGARoGlll2vJLFq6/I3iq2fOEoCw4dRuGpwXDwg0yljNMYcGTlbI96hwKSJ/OTcZ8kzn/1RIJ5cYyVmu6U8IYm7sCpmVGryPQYaEIRIGa8E99veSHLsRn/NjIkGilXA/aAbc2vhWtEPuy9Vhf79LO7RwhYKz4/bs49JL6hTkkj1wCECgYA8ohqx3hcS35ZzPyWLBrCN3aE1mB4iFQr9UeRaRGbXjLxgaOWLWuzd8dzDb1/wtk/boxPbcnB7qaLL15G2WJGzYm7uuaTqJOxmk9AcTC/mY8dtLF4QsSbI8s72Y64Elz/3DOOefaiC7ZJ+M8bOg5i2tWyRzdFYv8QU1+jINuFbRg==";
+    public static String APP_PRIVATE_KEY = ""
     // 参数返回格式，只支持json
     public static String FORMAT = "json";
     // 编码集，支持GBK/UTF-8
     public static String CHARSET = "UTF-8";
     // 支付宝公钥，由支付宝生成
-    public static String ALIPAY_PUBLIC_KEY =
-        "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzTYAodj65K7dETKjfBMCpVd1J5p7lM2FA2AbKqfAeIYLN/91g7v8FvIG6eBg3c2dQTeFO6uO520v5zU5HDyhsDJD3iUdNkenWfuCK8QvzGpKRWbL0Dfj3u/3XemT6SnhHT81Q6jRQJF87NHtBg5fAEt4W9NXWsxMIjYiyiHF30qQRbAFGOXmZbpa+jpHmGRMSQa/r+lD2lSrUqPsrX0laZzSQKu4aqn3WTxQ9kpCQf+2Xm+x+gZQNu9GlxIwVhCNhfoK1AnvBZa1o72sNlylFU0nRVKZOBqsOWbJ3N7DtgqyXq2gKZjkMARVoC2EZTE8AAEccDkvkmq9e/64C38g8wIDAQAB";
+    public static String ALIPAY_PUBLIC_KEY = ""
     // 商户生成签名字符串所使用的签名算法类型，目前支持RSA2和RSA，推荐使用RSA2
     public static String SIGN_TYPE = "RSA2";
 
