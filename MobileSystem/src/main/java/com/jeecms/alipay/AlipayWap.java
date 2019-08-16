@@ -37,13 +37,13 @@ public class AlipayWap {
     // APPID 即创建应用后生成
     public static String APP_ID = "";
     // 开发者私钥，由开发者自己生成
-    public static String APP_PRIVATE_KEY = ""
+    public static String APP_PRIVATE_KEY = "";
     // 参数返回格式，只支持json
     public static String FORMAT = "json";
     // 编码集，支持GBK/UTF-8
     public static String CHARSET = "UTF-8";
     // 支付宝公钥，由支付宝生成
-    public static String ALIPAY_PUBLIC_KEY = ""
+    public static String ALIPAY_PUBLIC_KEY = "";
     // 商户生成签名字符串所使用的签名算法类型，目前支持RSA2和RSA，推荐使用RSA2
     public static String SIGN_TYPE = "RSA2";
 
